@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
+    
+    @AppStorage("widgets", store: UserDefaults(suiteName: "group.rey.WidgetZoneApp"))
+    var widgetData: Data = Data()
+    
+    let widgets = [
+        MyWidget(name: "Test widget", description: "Test widget description", color: "red"),
+        MyWidget(name: "Test widget2", description: "Test widget description2", color: "green"),
+        MyWidget(name: "Test widget3", description: "Test widget description3", color: "blue")
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ForEach(widgets) { widget in
+            SaveWidgetView(widget: widget, completion: { widget in
+                saveWidget(widget: widget)
+            })
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    func saveWidget(widget: MyWidget) {
+        guard let data = try? JSONEncoder().encode(widget) else { return }
+        self.widgetData = data
     }
 }

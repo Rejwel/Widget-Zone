@@ -18,6 +18,10 @@
 		F1881FBC27087CBA002AAAD9 /* Widget_Zone_Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F1881FB827087CB7002AAAD9 /* Widget_Zone_Widgets.intentdefinition */; };
 		F1881FBD27087CBA002AAAD9 /* Widget_Zone_Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F1881FB827087CB7002AAAD9 /* Widget_Zone_Widgets.intentdefinition */; };
 		F1881FC027087CBA002AAAD9 /* Widget Zone WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1881FAF27087CB7002AAAD9 /* Widget Zone WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1ADA6A2271C932A00962153 /* SaveWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ADA6A1271C932A00962153 /* SaveWidgetView.swift */; };
+		F1ADA6A3271C932A00962153 /* SaveWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ADA6A1271C932A00962153 /* SaveWidgetView.swift */; };
+		F1F1E464271C8CCB0095BC8C /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1E463271C8CCB0095BC8C /* MyWidget.swift */; };
+		F1F1E465271C8CCB0095BC8C /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1E463271C8CCB0095BC8C /* MyWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,11 @@
 		F1881FB827087CB7002AAAD9 /* Widget_Zone_Widgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget_Zone_Widgets.intentdefinition; sourceTree = "<group>"; };
 		F1881FB927087CBA002AAAD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1881FBB27087CBA002AAAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1ADA6A1271C932A00962153 /* SaveWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWidgetView.swift; sourceTree = "<group>"; };
+		F1ADA6A6271CB5EC00962153 /* Widget Zone.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Widget Zone.entitlements"; sourceTree = "<group>"; };
+		F1ADA6A7271CB5EC00962153 /* Widget ZoneDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Widget ZoneDebug.entitlements"; sourceTree = "<group>"; };
+		F1ADA6A8271CB5EC00962153 /* Widget Zone WidgetsExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Widget Zone WidgetsExtension.entitlements"; sourceTree = "<group>"; };
+		F1F1E463271C8CCB0095BC8C /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,7 @@
 		F1881F9127087660002AAAD9 = {
 			isa = PBXGroup;
 			children = (
+				F1ADA6A8271CB5EC00962153 /* Widget Zone WidgetsExtension.entitlements */,
 				F1881F9C27087660002AAAD9 /* Widget Zone */,
 				F1881FB527087CB7002AAAD9 /* Widget Zone Widgets */,
 				F1881FB027087CB7002AAAD9 /* Frameworks */,
@@ -101,10 +111,14 @@
 		F1881F9C27087660002AAAD9 /* Widget Zone */ = {
 			isa = PBXGroup;
 			children = (
+				F1ADA6A6271CB5EC00962153 /* Widget Zone.entitlements */,
+				F1ADA6A7271CB5EC00962153 /* Widget ZoneDebug.entitlements */,
 				F1881F9D27087660002AAAD9 /* Widget_ZoneApp.swift */,
 				F1881F9F27087660002AAAD9 /* ContentView.swift */,
 				F1881FA127087663002AAAD9 /* Assets.xcassets */,
 				F1881FA327087663002AAAD9 /* Preview Content */,
+				F1F1E463271C8CCB0095BC8C /* MyWidget.swift */,
+				F1ADA6A1271C932A00962153 /* SaveWidgetView.swift */,
 			);
 			path = "Widget Zone";
 			sourceTree = "<group>";
@@ -240,7 +254,9 @@
 			files = (
 				F1881FA027087660002AAAD9 /* ContentView.swift in Sources */,
 				F1881FBD27087CBA002AAAD9 /* Widget_Zone_Widgets.intentdefinition in Sources */,
+				F1ADA6A2271C932A00962153 /* SaveWidgetView.swift in Sources */,
 				F1881F9E27087660002AAAD9 /* Widget_ZoneApp.swift in Sources */,
+				F1F1E464271C8CCB0095BC8C /* MyWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +266,8 @@
 			files = (
 				F1881FBC27087CBA002AAAD9 /* Widget_Zone_Widgets.intentdefinition in Sources */,
 				F1881FB727087CB7002AAAD9 /* Widget_Zone_Widgets.swift in Sources */,
+				F1ADA6A3271C932A00962153 /* SaveWidgetView.swift in Sources */,
+				F1F1E465271C8CCB0095BC8C /* MyWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +404,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Widget Zone/Widget ZoneDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Widget Zone/Preview Content\"";
@@ -417,6 +436,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Widget Zone/Widget Zone.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Widget Zone/Preview Content\"";
@@ -447,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Widget Zone WidgetsExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PQ2YW6R3NC;
@@ -474,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Widget Zone WidgetsExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PQ2YW6R3NC;
